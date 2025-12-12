@@ -1,0 +1,88 @@
+.top .nav li:last-child a{
+    background-color: rgba(255, 105, 180, 0.3);
+    color: aliceblue;
+}
+.change .choice{
+    margin: 30px;
+    display: flex;
+}
+.change .choice li{
+    padding: 0 30px;
+    color: aliceblue;
+    border-left: hotpink solid 2px;
+}
+.change .choice li:first-child{
+    padding-left: 0;
+    border-left: none;
+}
+.change .choice li button{
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 40px;
+    background-color: #111318;
+    color: hotpink;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 20px;
+}
+.wrapper .moviesList{
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.moviesCategory li{
+    display: none;
+    min-height: 253px;
+}
+.wrapper .moviesCategory .active{
+    display: block !important;
+}
+.change .choice button.active {
+    background-color: rgba(255, 105, 180, 0.3);
+    color: white;
+}
+.moviesList .movie-card{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    border-radius: 10px;
+    background-color: rgb(1, 19, 35);
+    height: 253px;
+    width: 440px;
+    color:aliceblue;
+    flex-shrink: 0;
+}
+.movie-card .movie-meta{
+    padding: 0 20px;
+    width: 252px;
+    flex-shrink: 0;
+}
+.wrapper .moviesList li img{
+    height: 253px;
+    width: 188px;
+    border-radius: 10px;
+}
+.movie-meta .score{
+    height: 30px;
+    color: hotpink;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ .movie-meta .intro{
+    color: aliceblue;
+}
+ .movie-meta .year{
+    color: rgb(252, 210, 231);
+}
+.moviesList .movie-card:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+.moviesList .movie-card:hover .movie-meta h3{
+    color: hotpink;
+    transition: all 0.3s ease;
+}

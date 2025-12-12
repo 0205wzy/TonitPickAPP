@@ -1,0 +1,136 @@
+.banner .wrapper{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding:30px;
+    background-color: #fff;
+    color: black;
+    border-radius: 20px;
+}
+
+.movie-header {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    
+}
+.movie-header::before {
+  content: '';
+  background-image: url('../images/actor/poster.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  opacity: 0.2; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.movie-header > * {
+  position: relative;
+  z-index: 2;
+}
+
+.movie-header img {
+    width: 300px;
+    height: 450px;
+    border-radius: 8px;
+}
+.score {
+    color: hotpink;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.year{
+    color: #3a3a3a;
+    margin-top: 3px;
+}
+.genres {
+    display: flex;
+    gap: 20px;
+    color: #3a3a3a;
+    font-size: 16px;
+    margin: 10px 0;
+}
+.genres li{
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.duration{
+    color: #3a3a3a;
+}
+.comment {
+    margin-top: 10px;
+    color: #3a3a3a;
+}
+.overview h3 {
+    color: #3a3a3a;
+}
+.overview p {
+    margin-top: 20px;
+    line-height: 1.6;
+    color: #3a3a3a;
+}
+
+.crew-section h2,
+.cast-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid hotpink;
+}
+
+/* 制作团队 - 紧凑版 */
+.directors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: rgb(251, 235, 247);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.crew-member {
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 140px;
+    min-height: 60px;
+}
+
+.cast {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: rgb(251, 235, 247);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.cast-member {
+    padding: 10px;
+    width: 170px;
+    min-height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.cast-member img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.cast-member h5,
+.cast-member p{
+    display: block;
+    text-align: center;
+}
