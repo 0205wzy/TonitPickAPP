@@ -6,6 +6,28 @@
     position: absolute;
     width: 100%;
 }
+.top .wrapper .search{
+    margin-left: 500px;
+    display: flex;
+    align-items: center;
+}
+.top .wrapper .search input{
+    width: 300px;
+    height: 40px;
+    border: 1px solid #e5e5e5;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+}
+.top .wrapper .search button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: rgba(255, 105, 180, 0.3);
+    cursor: pointer;
+    color: aliceblue;
+}
 .header .wrapper{
     height: 343.47px;
     position: relative;
@@ -105,6 +127,16 @@
     position: absolute;
     left: 10px;
     bottom: 90px;}
+.search-results{
+    display: none;
+}
+.banner .wrapper .search-results.active{
+    display: block;
+}
+.banner .wrapper .search-results p{
+    color: aliceblue;
+}
+
 .banner .wrapper .moviesList li .cover {
     position: absolute;
     height: 40px;
