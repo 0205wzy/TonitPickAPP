@@ -58,11 +58,12 @@ const resultsDiv = document.getElementById('results');
 
 form.onsubmit = function(e) {
     e.preventDefault(); 
+    container.classList.add('active');
     const keyword = input.value;    
     resultsDiv.innerHTML = '';
     if (!keyword) return;
     
-    container.classList.add('active'); // 显示搜索结果区域
+     // 显示搜索结果区域
     // 找匹配的电影
     const foundMovies = [];
     // CONFIG.MOVIES_DATA 是一个对象，需要遍历它的值
@@ -73,7 +74,7 @@ form.onsubmit = function(e) {
         const movie = moviesData[movieName];
         
         // 检查电影标题是否包含关键词
-        if (movie.title && movie.original_title && movie.title.includes(keyword) &&movie.original_title.includes(keyword)) {
+        if ((movie.title &&  movie.title.includes(keyword)) || (movie.original_title && movie.original_title.includes(keyword))) {
             foundMovies.push(movie);
         }
     }
